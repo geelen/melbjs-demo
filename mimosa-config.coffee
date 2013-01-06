@@ -40,7 +40,7 @@ exports.config = {
                                          # is set to 0, no throttling is performed. Recommended
                                          # to leave this set at 0, thedefault, until you start
                                          # encountering EMFILE problems.
-	
+
   # compilers:
     # extensionOverrides:       # A list of extension overrides, format is:
                                 # [compilerName]:[arrayOfExtensions], see
@@ -65,20 +65,20 @@ exports.config = {
   # the extensions of files to copy from sourceDir to compiledDir. vendor js/css, images, etc.
   ###
   # copy:
-    # extensions: ["js","css","png","jpg","jpeg","gif","html","eot","svg","ttf","woff","otf","yaml","kml"]	
+    # extensions: ["js","css","png","jpg","jpeg","gif","html","eot","svg","ttf","woff","otf","yaml","kml"]
 
-  # growl:
+  growl:
     # onStartup: false       # Controls whether or not to Growl when assets successfully
                              # compile/copy on startup, If you've got 100 CoffeeScript files,
                              # and you do a clean and then start watching, you'll get 100 Growl
                              # notifications.  This is set to false by default to prevent that.
                              # Growling for every successful file on startup can also cause
                              # EMFILE issues. See watch.throttle
-    # onSuccess:             # Controls whether to Growl when assets successfully compile/copy
-      # javascript: true     # growl on successful compilation? will always send on failure
-      # css: true            # growl on successful compilation? will always send on failure
-      # template: true       # growl on successful compilation? will always send on failure
-      # copy: true           # growl on successful copy?	
+    onSuccess:             # Controls whether to Growl when assets successfully compile/copy
+      javascript: false     # growl on successful compilation? will always send on failure
+      css: false            # growl on successful compilation? will always send on failure
+      template: false       # growl on successful compilation? will always send on failure
+      copy: false           # growl on successful copy?
 
   server:                      # configuration for server when server option is enabled via CLI
     useDefaultServer: true    # whether or not mimosa starts a default server for you, when
@@ -93,7 +93,7 @@ exports.config = {
       # compileWith: 'jade'      # Other valid options: "hogan", "html", "ejs". The compiler for
                                  # your views.
       # extension: 'jade'        # extension of your server views
-      # path: 'views'            # path from the root of your project to your views	
+      # path: 'views'            # path from the root of your project to your views
 
   # require:                 # configuration for requirejs options.
     # verify:                # settings for requirejs path verification
@@ -108,7 +108,7 @@ exports.config = {
                              # make tweaks uncomment this line and add the r.js config
                              # (http://requirejs.org/docs/optimization.html#options) as new
                              # paramters inside the overrides ojbect. To unset Mimosa's defaults,
-                             # set a property to null	
+                             # set a property to null
 
   # minify:                     # Configuration for non-require minification/compression via
                                 # uglify using the --minify flag.
@@ -117,7 +117,7 @@ exports.config = {
                                 # like jquery.min.js, is assumed to already be minified and is
                                 # ignored by default. Paths can be relative to the
                                 # watch.compiledDir, or absolute.  Paths are to compiled files,
-                                # so '.js' rather than '.coffee'	
+                                # so '.js' rather than '.coffee'
 
   # lint:                      # settings for js, css linting/hinting
     # compiled:                # settings for compiled files
@@ -136,14 +136,14 @@ exports.config = {
       # javascript:            # Settings: http://www.jshint.com/options/
         # plusplus: true       # This is an example override, this is not a default
       # css:                   # Settings: https://github.com/stubbornella/csslint/wiki/Rules
-        # floats: false        # This is an example override, this is not a default	
+        # floats: false        # This is an example override, this is not a default
 
   # liveReload:                   # Configuration for live-reload
     # enabled:true                # Whether or not live-reload is enabled
     # additionalDirs:["views"]    # Additional directories outside the watch.compiledDir
                                   # that you would like to have trigger a page refresh,
                                   # like, by default, static views. Is string path,
-                                  # can be relative to project root, or absolute	
+                                  # can be relative to project root, or absolute
 
   ###
   # This is not the full set of serverTemplate defaults as many defaults are assumed from other
