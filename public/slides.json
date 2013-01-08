@@ -28,7 +28,7 @@
     },
     {
       "title": "An Angular App",
-      "code": "<!DOCTYPE html>\n      <html ng-app>\n        <head>\n          <script src='/javascripts/vendor/angular.js'></script></script>\n        </head>\n        <body>\n          <h1>1 + 2 = {{ 1 + 2 }}</h1>\n        </body>\n      </html>"
+      "code": "<!DOCTYPE html>\n<html ng-app>\n  <head>\n    <script src='/javascripts/vendor/angular.js'></script>\n  </head>\n  <body>\n    <h1>1 + 2 = {{ 1 + 2 }}</h1>\n  </body>\n</html>"
     }
   ]
 }
