@@ -1,5 +1,5 @@
 doctype 5
-html(ng-app)
+html(ng-app='melbjs-demo')
   head
     title MelbJS Demo
     link(rel='stylesheet', href='/stylesheets/style.css' + cachebust)
@@ -11,5 +11,5 @@ html(ng-app)
     script(src='/javascripts/vendor/angular.js')
     script(src='/javascripts/main.js')
 
-  body
-    h1 1 + 2 = {{ 1 + 2 }}
+  body(ng-controller="BodyController")
+    h1 1 + 2 = {{ simpleMaths() }}
