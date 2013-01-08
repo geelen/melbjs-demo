@@ -87,7 +87,7 @@ exports.config = {
     # path: 'server.coffee'      # valid when useDefaultServer: false, path to file for provided
                                  # server which must contain export startServer method that takes
                                  # an enriched mimosa-config object
-    # port: 3000                 # port to start server on
+    port: 3002                 # port to start server on
     # base: ''                   # base of url for the app, if altered should start with a slash
     # views:                     # configuration for the view layer of your application
       # compileWith: 'jade'      # Other valid options: "hogan", "html", "ejs". The compiler for

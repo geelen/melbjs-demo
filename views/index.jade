@@ -1,4 +1,15 @@
-extends layout
+doctype 5
+html(ng-app)
+  head
+    title MelbJS Demo
+    link(rel='stylesheet', href='/stylesheets/style.css' + cachebust)
 
-block content
-  h1 Welcome to Mimosa {{ 1 + 2 }}
+    if reload
+      script(src='/socket.io/socket.io.js')
+      script(src='/javascripts/reload-client.js')
+
+    script(src='/javascripts/vendor/angular.js')
+    script(src='/javascripts/main.js')
+
+  body
+    h1 1 + 2 = {{ 1 + 2 }}
