@@ -1,0 +1,34 @@
+{
+  "slides": [
+    {
+      "title": "AngularJS",
+      "image": "http://angularjs.org/img/AngularJS-large.png",
+      "footnote": "by Glen Maddern"
+    },
+    {
+      "title": "AngularJS",
+      "dotpoints": [
+        "a framework for building web applications",
+        "an extension to HTML and browsers",
+        "at v1.0.3, backed by Google",
+        "an alternative to Backbone/Ember"
+      ]
+    },
+    {
+      "title": "Phase 1 - WHOA",
+      "image": "http://2.bp.blogspot.com/-q5aZsORjuwY/T1cJj5FZWWI/AAAAAAAAAOw/EkdsgmMb1FA/s1600/tumblr_lw4m1p8G5J1qzzh6g.jpg"
+    },
+    {
+      "title": "Phase 2 - ANGULAAARRRR",
+      "image": "http://www.thinkgeek.com/images/blog/khaaaan.jpg"
+    },
+    {
+      "title": "Phase 3 - AWW YEAH",
+      "image": "http://media.npr.org/assets/img/2012/11/20/macklemore-thrift-shop-still_wide-7d4092008474938959d2a80d3216271a0a15e65c-s6-c10.jpg"
+    },
+    {
+      "title": "An Angular App",
+      "code": "<!DOCTYPE html>\n      <html ng-app>\n        <head>\n          <script src='/javascripts/vendor/angular.js'></script></script>\n        </head>\n        <body>\n          <h1>1 + 2 = {{ 1 + 2 }}</h1>\n        </body>\n      </html>"
+    }
+  ]
+}

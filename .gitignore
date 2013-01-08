@@ -18,8 +18,10 @@ what
 *.sublime-workspace
 
 # Output folder
-/public
 /dist
+public/index.html
+public/javascripts
+public/stylesheets
 
 # Numerous always-ignore extensions
 *~
