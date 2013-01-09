@@ -12,4 +12,19 @@ html(ng-app='melbjs-demo')
     script(src='/javascripts/main.js')
 
   body(ng-controller="BodyController")
-    h1 1 + 2 = {{ simpleMaths() }}
+
+    a.prev(href, ng-click='prevSlide()') <
+    .slide(ng-repeat='slide in slides', ng-show='$index == currentSlide')
+      h1 {{ slide.title }}
+      img(ng-src='{{ slide.image }}')
+
+
+      ul
+        li(ng-repeat='point in slide.dotpoints')
+          | {{ point }}
+
+      pre
+        code {{ slide.code }}
+
+      footer {{ slide.footnote }}
+    a.next(href, ng-click='nextSlide()') >
